@@ -20,7 +20,7 @@ crewai install
 ```
 ### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Copy `example.env` into `.env`, and add your api key**
 
 - Modify `src/project_s/config/agents.yaml` to define your agents
 - Modify `src/project_s/config/tasks.yaml` to define your tasks
@@ -33,6 +33,12 @@ To kickstart your crew of AI agents and begin task execution, run this from the 
 
 ```bash
 $ crewai run
+```
+
+Or, if you've just installed uv:
+```bash
+uv sync
+source .venv/bin/activate
 ```
 
 This command initializes the project_s Crew, assembling the agents and assigning them tasks as defined in your configuration.
