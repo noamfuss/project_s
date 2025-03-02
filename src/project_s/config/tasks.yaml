@@ -1,26 +1,27 @@
 writing_task:
   description: >
-    Write a comprehensive plot for a virtual escape room based on {topic}. 
-    The plot should include a detailed storyline, key characters, and a series 
-    of puzzles or challenges that participants must solve to progress through 
-    the escape room. Ensure that the plot is engaging, coherent, and provides 
-    a logical progression from start to finish. The plot should also include 
-    any necessary background information or context to help participants 
+    Write a comprehensive plot for a virtual escape room based on "{topic}".
+    The plot should include a detailed storyline, key characters, and a series
+    of puzzles or challenges that participants must solve to progress through
+    the escape room. Note that the participants have to be able to solve every
+    puzzle using just their phones, so the puzzles should be text-based or
+    image-based. Ensure that the plot is engaging, coherent, and provides
+    a logical progression from start to finish. The plot should also include
+    any necessary background information or context to help participants
     understand the setting and objectives of the escape room.
   expected_output: >
-    A detailed plot for a virtual escape room based on {topic} that includes a 
+    A detailed plot for a virtual escape room based on "{topic}" that includes a
     storyline, key characters, and a series of puzzles or challenges, in a Markdown format.
 
-    
   agent: plot_writer
 
 verifying_task:
   description: >
     Read the plot created by the plot writer and correct any inconsistencies
-    or errors. Provide feedback on the plot and suggest any improvements that 
+    or errors. Provide feedback on the plot and suggest any improvements that
     could be made.
   expected_output: >
-    A fully fledged plot for an escape room based on {topic} that is coherent, 
+    A fully fledged plot for an escape room based on "{topic}" that is coherent,
     engaging, and free of errors. Provide detailed feedback on the plot and suggest any improvements that could be made.
     Formatted as markdown without '```'
   agent: plot_verifier
